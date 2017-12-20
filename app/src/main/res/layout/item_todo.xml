@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp"
+        android:textColor="#0a0501"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/task_delete"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#41ce41"
+        android:onClick="deleteTask"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="Done" />
+
+    <Button
+        android:id="@+id/task_update"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/task_delete"
+        android:background="#4861f1"
+        android:onClick="updateTask"
+        android:text="update task"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/change_date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/task_update"
+        android:background="#ed7262"
+        android:onClick="changeDate"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="change date" />
+
+
+</RelativeLayout>
